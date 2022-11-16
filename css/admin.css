@@ -66,6 +66,7 @@
                 width: 80%;
                 border-radius: 20px;
                 background-color: grey;
+                border: 0px;
             }
             .user {
                 width: 30%;
@@ -73,10 +74,44 @@
                 justify-content: space-evenly;
                 align-items: center;
             }
+            .user :nth-child(1) {
+                filter: invert(100%);
+            }
             .user :nth-child(2) {
                 width: 2rem;
                 height: 2rem;
             }
+            .update {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+            }
+                .user-big {
+                    width: 40%;
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                }
+                .user-big img{
+                    width: 5rem;
+                }
+                .user-big div :nth-child(1){
+                    font-size: 0.8rem;
+                }
+                .buttons {
+                    width: 35%;
+                    height: 30%;
+                    display: flex;
+                    justify-content: space-around;
+                }
+                .buttons button {
+                    width: 20%;
+                    border-radius: 20px;
+                    background-color: blue;
+                    color: white;
+                    border: 0px;
+                }
             
         section {
             display: grid;
